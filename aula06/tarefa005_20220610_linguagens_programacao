@@ -3,3 +3,15 @@
 1. Elaborar um pesquisa sobre linguagens de programação, abordar de forma generalizada os aspectos de pelo menos 5 linguagens. Abordar de forma mais específica as características de uma linguagem de sua preferência. Pode ser uma das cinco ou não.
 2. O resultado desta pesquisa deverá ser um texto eaborado com suas próprias palavras explicitando seu entendimento acerca do conteúdo pesquisado.
 Commitar no repositório pessoal até o dia 14/06.
+
+	As linguagens de programação consistem em padrões de escrita que possibilita escrever comandos para capturar uma entrada, de maneira em que possam ser adotadas regras de negócio e essas regras sejam processadas e armazenadas (de forma temporária ou definitiva), por último podem projetar uma saída que consiste em textos, alertas, sons ou janelas por exemplo. A grosso modo possibilitam conversar com sistemas e equipamentos e em geral são utilizadas no desenvolvimento de softwares. 
+	São classificadas em:
+    • Linguagens de baixo nível
+    • Linguagens de alto nível
+    • Linguagens não-estruturadas
+    • Linguagens estruturadas
+
+
+Java
+
+É uma linguagem simples, sem recursos confusos e pouco utilizados. Conhecida por possuir uma grande bibioteca padrão e ferramentas para que os programas possam ser distribuídos, além de conseguir executar várias tarefas simultaneamente no mesmo programa. Detém um coletor de lixo que evita desvios de memória removendo objetos sem referência localizada. Além de segura e sólida é uma linguagem orientada a objetos.
