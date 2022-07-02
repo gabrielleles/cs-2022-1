@@ -1,0 +1,8 @@
+from produto import Produto
+
+
+class Livro(Produto):
+    autor: str = None
+
+    def __init__(self, desc):
+        super().__init__(desc)

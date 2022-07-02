@@ -1,0 +1,10 @@
+from mouse import Mouse
+from livro import Livro
+
+mouse = Mouse('Mouse gamer, Saída USB. 3.200 dpi')
+livro = Livro('Dom Quixote')
+
+carrinho = [mouse, livro]
+
+for item in carrinho:
+    print(item.getDescricao())
