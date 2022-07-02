@@ -1,0 +1,18 @@
+from cavalo import Cavalo
+from cachorro import Cachorro
+from preguica import Preguica
+from veterinario import Veterinario
+from zoo import Zoologico
+from abstract_animal import Animal
+
+animais = [Cavalo, Cachorro, Preguica, Veterinario, Cavalo, Cachorro, Preguica, Veterinario, Cavalo, Preguica]
+curral = Zoologico
+
+for animal in animais:
+    curral.jaulas.append(animal)
+
+for animal in curral.jaulas:
+    animal.sound()
+
+for animal in curral.jaulas:
+    animal.correr()

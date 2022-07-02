@@ -1,0 +1,3 @@
+from abstract_animal import Animal
+class Zoologico:
+    jaulas = []

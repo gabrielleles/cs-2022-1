@@ -1,0 +1,15 @@
+class Animal:
+    name: str = None
+    age: int = None
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    @classmethod
+    def sound(cls):
+        pass
+
+    @classmethod
+    def correr(cls):
+        pass
