@@ -15,17 +15,16 @@ Dentro do contexto estudado em ciência da computação , a programação reflex
 
 Um exemplo prático de sua utilização é na realização de testes. Como em uma classe os métodos classificados como private ou protected geralmente não são testáveis, a utilização da reflexão torna esses métodos públicos, permitindo sua testagem. 
 
-Exemplo de utilização utilizando a linguagem Perl: 
+Exemplo de utilização utilizando a linguagem Java: 
 
 ~~~
 
-# sem reflexão
- Teste->new->testando;
- 
- # com reflexão
- my $class = "Teste";
- my $method = "testando";
- $class->new->$method;
+using namespace System;
+int main() {
+  Int32 i = 100;
+  Object ^ o = i;
+  Console::WriteLine("type of i = '{0}'", o->GetType());
+}
 
 ~~~
 
@@ -39,4 +38,12 @@ A programação defensiva define algumas regras, dentre elas a principal:
 
 - Nunca confie nos dados inseridos pelo usuário: todos os dados enviados por fontes externas têm que passar por um forte critério de formatação caso seja necessário que esse dado possua determinado formato pré-definido.
 
-A tratativa de erros causados por entradas falhas de dados do usuário pode ser feita de diversas maneiras. Se um usuário deve inserir uma data de nascimento no formato DD/MM/AAAA e insere AAAA-MM-DD o software deve: reconhecer o erro e corrigir automaticamente; ou retornar um valor padrão caso seja identificado que a entrada foi errada; ou lançar uma exceção que interrompa o fluxo da aplicação no momento do erro. 
+A tratativa de erros causados por entradas falhas de dados do usuário pode ser feita de diversas maneiras. Se um usuário deve inserir uma data de nascimento no formato DD/MM/AAAA e insere AAAA-MM-DD o software deve: reconhecer o erro e corrigir automaticamente; ou retornar um valor padrão caso seja identificado que a entrada foi errada; ou lançar uma exceção que interrompa o fluxo da aplicação no momento do erro.
+
+  ```c++
+  class UserDomain{
+    public:
+      void CreateUser(std::string name, std::string email, std::string cpf);
+  }
+  ```
+  Neste exemplo, por exemplo, é preciso validar o email e o cpf. 
